@@ -50,4 +50,8 @@ class TicTacToe
     end
     return false
   end
+
+  def turn
+
+  end
 end
