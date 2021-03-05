@@ -56,7 +56,7 @@ class TicTacToe
     user_input = gets.chomp
     user_input = input_to_index(user_input)
     current = current_player
-    if valid_move?
+    if valid_move?(user_input)
       move(user_input, current)
       display_board
     else
