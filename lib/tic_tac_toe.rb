@@ -13,7 +13,6 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
 
-
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
@@ -30,7 +29,7 @@ class TicTacToe
     @board.count{|token| token == "X" || token == "O"}
   end
 
-  def input_to_index(user_input)
-    return (@user_input.to_i - 1)
+  def input_to_index=(user_input)
+    return (user_input.to_i - 1)
   end
 end
