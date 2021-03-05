@@ -43,4 +43,8 @@ class TicTacToe
     end
     return false
   end
+
+  def valid_move?(index)
+
+  end
 end
