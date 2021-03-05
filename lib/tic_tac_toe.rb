@@ -14,7 +14,7 @@ class TicTacToe
   end
 
   def user_input=(user_input)
-    @user_input = (user_input.to_i - 1)
+    @user_input = user_input
   end
 
   def display_board
@@ -34,7 +34,7 @@ class TicTacToe
   end
 
   def input_to_index(user_input)
-    return (user_input.to_i - 1)
+    return (@user.to_i - 1)
   end
 
   def move()
