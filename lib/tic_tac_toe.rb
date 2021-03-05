@@ -33,7 +33,7 @@ class TicTacToe
     return (user_input.to_i - 1)
   end
 
-  def move(index, player="X")
+  def move(index, player)
     @board[index] = player
   end
 
@@ -55,8 +55,9 @@ class TicTacToe
     puts "Please enter a number 1-9: "
     user_input = gets.chomp
     user_input = input_to_index(user_input)
+    current = current_player
     if valid_move?
-      move(index)
+      move(current)
       display_board
     else
       puts "Please enter a valid input 1-9: "
