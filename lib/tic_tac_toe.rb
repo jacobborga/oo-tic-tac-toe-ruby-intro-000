@@ -56,12 +56,12 @@ class TicTacToe
     user_input = gets.chomp
     @user_input = input_to_index(user_input)
     current = current_player(board)
-    if valid_move?(board, user_input)
-      move(board, user_input, current)
-      display_board(board)
+    if valid_move?
+      move(current)
+      display_board
     else
       puts "Please enter a valid input 1-9: "
-      turn(board)
+      turn
     end
   end
 end
